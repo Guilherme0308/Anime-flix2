@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Categorias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row justify-content-center>
+    <ion-col size="6" size-md="4" *ngFor="let category of categories">
+      <ion-item>
+        <ion-button expand="full" [routerLink]="['/tabs/category', category]">
+          <ion-label>{{ category }}</ion-label>
+        </ion-button>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-content>
